@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080A14">
+<meta name="description" content="Блатные номера — коллекционная игра про красивые номера телефонов, рынок и торг.">
+<title>Блатные номера | SymCards</title>
+<link rel="icon" href="assets/flags/ru.png">
+<link rel="stylesheet" href="style.css?v=18">
+</head>
+<body class="theme-dark-minimal">
+<div id="app">
+  <header id="topbar" class="topbar">
+    <button id="brand" class="brand" type="button" title="SymCards">
+      <span class="brand-mark">SIM</span>
+      <span class="brand-name">Блатные SIM</span>
+    </button>
+
+    <div id="wallet" class="wallet" aria-label="Ресурсы">
+      <div class="wallet-item" title="Деньги">
+        <span class="wallet-icon">💰</span>
+        <span class="wallet-label">₽</span>
+        <span class="wallet-value" id="money">0</span>
+      </div>
+      <div class="wallet-item" title="Авторитет">
+        <span class="wallet-icon">⭐</span>
+        <span class="wallet-label">Авт.</span>
+        <span class="wallet-value" id="authority">0</span>
+      </div>
+      <div class="wallet-item" title="Хранилище">
+        <span class="wallet-icon">🗄️</span>
+        <span class="wallet-label">Мес.</span>
+        <span class="wallet-value" id="storage">0/20</span>
+      </div>
+      <div class="wallet-item" title="Уровень">
+        <span class="wallet-icon">📈</span>
+        <span class="wallet-label">Ур.</span>
+        <span class="wallet-value" id="level">1</span>
+      </div>
+    </div>
+
+    <button id="theme-switcher" class="icon-btn" type="button" title="Сменить тему (T)" aria-label="Сменить тему">
+      <span id="theme-icon">🌙</span>
+    </button>
+  </header>
+
+  <main id="screen-host" class="screen-host" tabindex="-1"></main>
+
+  <nav id="tabbar" class="tabbar" aria-label="Разделы игры">
+    <button class="tab is-active" type="button" data-screen="tap">
+      <span class="tab-icon">🔍</span>
+      <span class="tab-label">Поиск</span>
+    </button>
+    <button class="tab" type="button" data-screen="collection">
+      <span class="tab-icon">🗂️</span>
+      <span class="tab-label">Коллекция</span>
+    </button>
+    <button class="tab" type="button" data-screen="market">
+      <span class="tab-icon">🏪</span>
+      <span class="tab-label">Рынок</span>
+    </button>
+    <button class="tab" type="button" data-screen="trade">
+      <span class="tab-icon">🤝</span>
+      <span class="tab-label">Торг</span>
+      <span class="tab-dot hidden" id="trade-dot" aria-hidden="true"></span>
+    </button>
+    <button class="tab" type="button" data-screen="profile">
+      <span class="tab-icon">👤</span>
+      <span class="tab-label">Профиль</span>
+    </button>
+  </nav>
+</div>
+
+<div id="modal-root" class="modal-root"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">Для игры нужен JavaScript. Включите его в настройках браузера.</div>
+</noscript>
+
+<script src="js/data.js?v=17"></script>
+<script src="js/engine.js?v=17"></script>
+<script src="js/app.js?v=17"></script>
+<script src="js/ui.js?v=17"></script>
+</body>
+</html>
+
+
+
